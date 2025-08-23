@@ -17,7 +17,7 @@ import os
 import re
 
 # CONFIGURAÇÕES
-pasta = r"C:\Users\lanar\Downloads\teste"  # Pasta com PDFs
+pasta = r"C:\caminho\da\pasta"              # Pasta com PDFs
 prefixo = "NF "                             # Prefixo dos arquivos
 contador_inicial = 16545                    # Número inicial da sequência
 zeros = 5                                   # Dígitos com zero à esquerda
