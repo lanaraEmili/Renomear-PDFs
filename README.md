@@ -2,7 +2,8 @@
 
 Um **script em Python** para renomear arquivos PDF em uma pasta, organizando-os em **sequência numérica** a partir de um número inicial definido pelo usuário.  
 
-![Python Logo](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white) ![File PDF](https://img.shields.io/badge/Tipo-PDF-red)
+![Python Logo](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white) ![File PDF](https://img.shields.io/badge/Tipo-PDF-red) 
+![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen)
 
 ---
 
@@ -84,4 +85,3 @@ Pode ser adaptado para gerar logs ou ignorar arquivos em uso.
 
 
 ---
-
