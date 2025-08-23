@@ -1,27 +1,30 @@
-# Renomeador de PDFs
+# 📄 Renomeador de PDFs
 
-Este script em Python permite renomear arquivos PDF em uma pasta, organizando-os em **sequência numérica** a partir de um número inicial definido pelo usuário.
+Um **script em Python** para renomear arquivos PDF em uma pasta, organizando-os em **sequência numérica** a partir de um número inicial definido pelo usuário.  
 
----
-
-## Funcionalidades
-
-- Lista todos os arquivos PDF de uma pasta.
-- Ordena os arquivos numericamente com base nos números presentes no nome.
-- Renomeia os arquivos em sequência, começando a contagem a partir de um número definido pelo usuário.
-- Gera nomes padronizados com prefixo, por exemplo: `NF 16545.pdf`, `NF 16546.pdf`, etc.
+![Python Logo](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white) ![File PDF](https://img.shields.io/badge/Tipo-PDF-red)
 
 ---
 
-## Requisitos
 
-- Python 3.x
-- Sistema operacional: Windows, macOS ou Linux
-- Biblioteca padrão do Python (`os`, `re`) — não precisa instalar nada adicional.
+## ⚡ Funcionalidades
+
+- 📂 Lista todos os PDFs de uma pasta.  
+- 🔢 Ordena numericamente pelo número presente no nome.  
+- 📝 Renomeia os arquivos com prefixo definido e sequência numérica.  
+- 0️⃣ Suporta números com **zeros à esquerda**.  
+- ⚠️ Evita erros se arquivos estiverem abertos, mostrando alerta no terminal.
 
 ---
 
-## Como usar
+## 🛠️ Requisitos
+
+- Python 3.x  
+- Bibliotecas padrão: `os`, `re`  
+
+---
+
+## 🚀 Como usar
 
 1. Coloque o script na mesma pasta onde estão os PDFs **ou modifique o caminho** no código:
    ```python
@@ -36,19 +39,49 @@ Este script em Python permite renomear arquivos PDF em uma pasta, organizando-os
 
 5. Os PDFs serão renomeados em sequência numérica.
 
-Exemplo
+🔄 Exemplo de Entrada e Saída
+
 Antes:
- ```python
-  NF 1.pdf
-  NF 2.pdf
-  NF 10.pdf
-  NF 3.pdf
+ ```
+NF 1.pdf
+NF 2.pdf
+NF 10.pdf
+NF 3.pdf
+  ```      
+Depois:
+ ```      
+ NF 16545.pdf
+ NF 16546.pdf
+ NF 16547.pdf
+ NF 16548.pdf
+ ```
 
-  ```
+---
 
-Depois: (contador inicial = 16545)
-  ```python
-  NF 16545.pdf
-  NF 16546.pdf
-  NF 16547.pdf
-  NF 16548.pdf
+## ⚙️ Configurações
+
+Prefixo dos arquivos:
+
+```prefixo = "NF " ```
+
+Número inicial da sequência:
+
+``contador_inicial = 16545``
+
+Zeros à esquerda (opcional):
+
+``novo_nome = f"{prefixo}{i:05}.pdf"``
+
+---
+
+## 📝 Observações
+
+Feche todos os PDFs antes de executar.
+
+Arquivos em uso podem gerar PermissionError.
+
+Pode ser adaptado para gerar logs ou ignorar arquivos em uso.
+
+
+---
+
